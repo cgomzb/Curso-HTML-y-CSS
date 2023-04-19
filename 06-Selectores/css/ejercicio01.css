@@ -1,0 +1,24 @@
+button {
+    width: 150px;
+}
+
+button::before {
+    content: 'Pasa por encima';
+    position: absolute;
+    left: 7%;
+}
+
+button::after {
+    content: '¡Hecho!';
+    color: white;
+    background-color: green;
+    opacity: 0;
+}
+
+button:hover::before {
+    opacity: 0;
+}
+
+button:hover::after {
+    opacity: 1;
+}
